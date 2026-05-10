@@ -31,8 +31,7 @@ pipe = pipeline(
 
 class DescriptionRequest(BaseModel):
     placeName: str = Field(min_length=2, max_length=100)
-    country: str | None = Field(default=None, max_length=100)
-    language: str = Field(default="bg")
+    placeLocation: str | None = Field(default=None, max_length=100)
     maxLength: int = Field(default=300, ge=50, le=1000)
 
 
@@ -42,7 +41,7 @@ class DescriptionResponse(BaseModel):
 
 
 def build_prompt(data: DescriptionRequest) -> list[dict]:
-    country_text = f", {data.country}" if data.country else ""
+    place_location_text = f", Location: {data.placeLocation}" if data.placeLocation else ""
 
     return [
         {
@@ -59,9 +58,9 @@ def build_prompt(data: DescriptionRequest) -> list[dict]:
         {
             "role": "user",
             "content": (
-                #f"Generate a short travel description in language: {data.language}. "
-                f"Place: {data.placeName} in {country_text}. "
-                f"The description must be maximum {data.maxLength} characters. "
+                f"Generate a short travel description. "
+                f"Place: {data.placeName}{place_location_text}. "
+                f"The description must be around and no more than {data.maxLength} characters. "
                 "Return only JSON."
             )
         }
