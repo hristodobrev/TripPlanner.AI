@@ -1,0 +1,532 @@
+[
+  {
+    "name": "Rome",
+    "country": "Italy",
+    "description": "Historic European city known for ancient ruins, museums, architecture, Italian cuisine and romantic atmosphere."
+  },
+  {
+    "name": "Paris",
+    "country": "France",
+    "description": "Famous cultural capital known for art, museums, cafes, fashion, architecture and romantic streets."
+  },
+  {
+    "name": "London",
+    "country": "United Kingdom",
+    "description": "Global city known for history, museums, royal landmarks, nightlife and diverse cultural experiences."
+  },
+  {
+    "name": "New York",
+    "country": "United States",
+    "description": "Modern metropolitan city famous for skyscrapers, entertainment, shopping, food and vibrant city life."
+  },
+  {
+    "name": "Tokyo",
+    "country": "Japan",
+    "description": "Dynamic city blending futuristic technology, traditional culture, nightlife, food and modern attractions."
+  },
+  {
+    "name": "Barcelona",
+    "country": "Spain",
+    "description": "Mediterranean city known for beaches, Gaudi architecture, nightlife, tapas and vibrant atmosphere."
+  },
+  {
+    "name": "Athens",
+    "country": "Greece",
+    "description": "Historic Mediterranean city famous for ancient ruins, mythology, museums and traditional Greek culture."
+  },
+  {
+    "name": "Vienna",
+    "country": "Austria",
+    "description": "Elegant European capital known for classical music, imperial architecture, museums and coffee culture."
+  },
+  {
+    "name": "Prague",
+    "country": "Czech Republic",
+    "description": "Historic city with gothic architecture, old town squares, castles and charming walkable streets."
+  },
+  {
+    "name": "Budapest",
+    "country": "Hungary",
+    "description": "Beautiful riverside city known for thermal baths, historic architecture, nightlife and scenic bridges."
+  },
+  {
+    "name": "Istanbul",
+    "country": "Turkey",
+    "description": "Unique city connecting Europe and Asia, famous for mosques, bazaars, history and rich cuisine."
+  },
+  {
+    "name": "Amsterdam",
+    "country": "Netherlands",
+    "description": "Canal city known for cycling culture, museums, nightlife, historic buildings and artistic heritage."
+  },
+  {
+    "name": "Berlin",
+    "country": "Germany",
+    "description": "Modern European capital known for history, nightlife, art, museums and creative urban culture."
+  },
+  {
+    "name": "Lisbon",
+    "country": "Portugal",
+    "description": "Sunny coastal capital known for colorful streets, seafood, trams, viewpoints and relaxed atmosphere."
+  },
+  {
+    "name": "Madrid",
+    "country": "Spain",
+    "description": "Lively capital famous for museums, football, nightlife, plazas and traditional Spanish cuisine."
+  },
+  {
+    "name": "Florence",
+    "country": "Italy",
+    "description": "Renaissance city known for art, museums, historic architecture and authentic Italian culture."
+  },
+  {
+    "name": "Venice",
+    "country": "Italy",
+    "description": "Romantic canal city famous for gondolas, historic palaces, architecture and unique waterways."
+  },
+  {
+    "name": "Milan",
+    "country": "Italy",
+    "description": "Fashion and business capital known for shopping, modern lifestyle, architecture and Italian cuisine."
+  },
+  {
+    "name": "Naples",
+    "country": "Italy",
+    "description": "Historic southern Italian city known for pizza, coastal views, culture and nearby ancient ruins."
+  },
+  {
+    "name": "Dubrovnik",
+    "country": "Croatia",
+    "description": "Coastal medieval city known for stone walls, Adriatic views and historic old town charm."
+  },
+  {
+    "name": "Split",
+    "country": "Croatia",
+    "description": "Adriatic coastal city known for Roman history, beaches, nightlife and Mediterranean atmosphere."
+  },
+  {
+    "name": "Krakow",
+    "country": "Poland",
+    "description": "Historic Polish city famous for castles, old town architecture, culture and affordable travel experiences."
+  },
+  {
+    "name": "Warsaw",
+    "country": "Poland",
+    "description": "Modern European capital combining reconstructed history, museums, parks and urban city life."
+  },
+  {
+    "name": "Bucharest",
+    "country": "Romania",
+    "description": "Eastern European capital known for nightlife, historic buildings, parks and vibrant urban culture."
+  },
+  {
+    "name": "Sofia",
+    "country": "Bulgaria",
+    "description": "Historic Balkan capital known for ancient landmarks, mountain views and affordable travel opportunities."
+  },
+  {
+    "name": "Belgrade",
+    "country": "Serbia",
+    "description": "Energetic Balkan city known for nightlife, riverside atmosphere, history and friendly local culture."
+  },
+  {
+    "name": "Ljubljana",
+    "country": "Slovenia",
+    "description": "Small green European capital known for charming riverside streets, castles and relaxed atmosphere."
+  },
+  {
+    "name": "Bratislava",
+    "country": "Slovakia",
+    "description": "Compact European capital known for historic architecture, riverside views and cozy old town streets."
+  },
+  {
+    "name": "Copenhagen",
+    "country": "Denmark",
+    "description": "Scandinavian city known for cycling, modern design, waterfronts and high quality of life."
+  },
+  {
+    "name": "Stockholm",
+    "country": "Sweden",
+    "description": "Northern European capital known for islands, modern design, museums and scenic waterfront views."
+  },
+  {
+    "name": "Oslo",
+    "country": "Norway",
+    "description": "Scandinavian capital surrounded by nature, known for fjords, museums and outdoor activities."
+  },
+  {
+    "name": "Helsinki",
+    "country": "Finland",
+    "description": "Modern Nordic capital known for saunas, architecture, waterfronts and minimalist Scandinavian culture."
+  },
+  {
+    "name": "Reykjavik",
+    "country": "Iceland",
+    "description": "Northern capital famous for geothermal spas, nature, northern lights and unique landscapes."
+  },
+  {
+    "name": "Dublin",
+    "country": "Ireland",
+    "description": "Friendly European capital known for pubs, music, history and lively cultural atmosphere."
+  },
+  {
+    "name": "Edinburgh",
+    "country": "United Kingdom",
+    "description": "Historic Scottish city known for castles, festivals, medieval streets and dramatic architecture."
+  },
+  {
+    "name": "Zurich",
+    "country": "Switzerland",
+    "description": "Clean Swiss city known for lakeside scenery, luxury shopping, finance and mountain access."
+  },
+  {
+    "name": "Geneva",
+    "country": "Switzerland",
+    "description": "International Swiss city known for diplomacy, lakeside beauty, luxury lifestyle and mountain scenery."
+  },
+  {
+    "name": "Brussels",
+    "country": "Belgium",
+    "description": "European political center known for chocolate, waffles, historic squares and multicultural atmosphere."
+  },
+  {
+    "name": "Bruges",
+    "country": "Belgium",
+    "description": "Fairytale medieval city famous for canals, cobblestone streets and preserved historic architecture."
+  },
+  {
+    "name": "Luxembourg City",
+    "country": "Luxembourg",
+    "description": "Small European capital known for fortifications, financial district and picturesque old town views."
+  },
+  {
+    "name": "Monaco",
+    "country": "Monaco",
+    "description": "Luxury Mediterranean city-state known for casinos, yachts, Formula One and upscale lifestyle."
+  },
+  {
+    "name": "Nice",
+    "country": "France",
+    "description": "French Riviera city known for beaches, coastal promenades, Mediterranean food and sunny weather."
+  },
+  {
+    "name": "Marseille",
+    "country": "France",
+    "description": "Historic Mediterranean port city known for seafood, culture, coastal scenery and diverse atmosphere."
+  },
+  {
+    "name": "Lyon",
+    "country": "France",
+    "description": "French city famous for gastronomy, historic architecture, riverside districts and cultural heritage."
+  },
+  {
+    "name": "Munich",
+    "country": "Germany",
+    "description": "German city known for beer culture, festivals, Bavarian traditions and elegant architecture."
+  },
+  {
+    "name": "Hamburg",
+    "country": "Germany",
+    "description": "Major port city known for canals, nightlife, modern architecture and maritime culture."
+  },
+  {
+    "name": "Frankfurt",
+    "country": "Germany",
+    "description": "Modern financial city known for skyscrapers, business culture and international atmosphere."
+  },
+  {
+    "name": "Cologne",
+    "country": "Germany",
+    "description": "Historic German city known for its cathedral, riverside atmosphere and cultural events."
+  },
+  {
+    "name": "Seville",
+    "country": "Spain",
+    "description": "Southern Spanish city famous for flamenco, historic palaces, warm climate and traditional culture."
+  },
+  {
+    "name": "Valencia",
+    "country": "Spain",
+    "description": "Mediterranean city known for beaches, futuristic architecture, food and relaxed atmosphere."
+  },
+  {
+    "name": "Malaga",
+    "country": "Spain",
+    "description": "Sunny coastal city known for beaches, seafood, art museums and Andalusian culture."
+  },
+  {
+    "name": "Porto",
+    "country": "Portugal",
+    "description": "Historic riverside city famous for wine, colorful architecture and scenic waterfront views."
+  },
+  {
+    "name": "Faro",
+    "country": "Portugal",
+    "description": "Relaxed coastal city known for beaches, seafood and gateway access to the Algarve region."
+  },
+  {
+    "name": "Santorini",
+    "country": "Greece",
+    "description": "Famous Greek island destination known for white houses, sunsets, beaches and romantic atmosphere."
+  },
+  {
+    "name": "Thessaloniki",
+    "country": "Greece",
+    "description": "Greek coastal city known for nightlife, Byzantine history, food and lively student culture."
+  },
+  {
+    "name": "Cairo",
+    "country": "Egypt",
+    "description": "Historic Middle Eastern city famous for pyramids, ancient history, markets and cultural heritage."
+  },
+  {
+    "name": "Marrakech",
+    "country": "Morocco",
+    "description": "Colorful Moroccan city known for markets, riads, spices, traditional architecture and vibrant culture."
+  },
+  {
+    "name": "Dubai",
+    "country": "United Arab Emirates",
+    "description": "Luxury modern city known for skyscrapers, shopping malls, beaches and futuristic attractions."
+  },
+  {
+    "name": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "description": "Modern Gulf capital known for luxury, cultural landmarks, beaches and impressive architecture."
+  },
+  {
+    "name": "Doha",
+    "country": "Qatar",
+    "description": "Modern desert city known for luxury lifestyle, museums, skyline views and cultural development."
+  },
+  {
+    "name": "Jerusalem",
+    "country": "Israel",
+    "description": "Historic holy city known for religious landmarks, ancient streets and cultural significance."
+  },
+  {
+    "name": "Tel Aviv",
+    "country": "Israel",
+    "description": "Modern Mediterranean city famous for beaches, nightlife, technology and vibrant urban culture."
+  },
+  {
+    "name": "Bangkok",
+    "country": "Thailand",
+    "description": "Bustling Asian city known for street food, temples, nightlife, markets and energetic atmosphere."
+  },
+  {
+    "name": "Singapore",
+    "country": "Singapore",
+    "description": "Modern city-state known for cleanliness, futuristic architecture, food and multicultural lifestyle."
+  },
+  {
+    "name": "Hong Kong",
+    "country": "China",
+    "description": "Dense urban city known for skyline views, shopping, food and international business culture."
+  },
+  {
+    "name": "Shanghai",
+    "country": "China",
+    "description": "Modern Chinese metropolis known for skyscrapers, luxury shopping and futuristic city landscapes."
+  },
+  {
+    "name": "Beijing",
+    "country": "China",
+    "description": "Historic Chinese capital known for imperial landmarks, culture, temples and modern development."
+  },
+  {
+    "name": "Seoul",
+    "country": "South Korea",
+    "description": "Modern Asian capital known for technology, nightlife, fashion, food and pop culture."
+  },
+  {
+    "name": "Busan",
+    "country": "South Korea",
+    "description": "Coastal Korean city known for beaches, seafood, mountains and vibrant cultural atmosphere."
+  },
+  {
+    "name": "Kyoto",
+    "country": "Japan",
+    "description": "Traditional Japanese city known for temples, gardens, shrines and preserved cultural heritage."
+  },
+  {
+    "name": "Osaka",
+    "country": "Japan",
+    "description": "Energetic Japanese city famous for street food, nightlife, shopping and entertainment districts."
+  },
+  {
+    "name": "Delhi",
+    "country": "India",
+    "description": "Historic Indian capital known for markets, monuments, street food and cultural diversity."
+  },
+  {
+    "name": "Mumbai",
+    "country": "India",
+    "description": "Large coastal metropolis known for Bollywood, nightlife, food and fast-paced urban life."
+  },
+  {
+    "name": "Jaipur",
+    "country": "India",
+    "description": "Historic Indian city known for palaces, forts, colorful streets and royal architecture."
+  },
+  {
+    "name": "Sydney",
+    "country": "Australia",
+    "description": "Coastal Australian city famous for beaches, opera house, harbor views and outdoor lifestyle."
+  },
+  {
+    "name": "Melbourne",
+    "country": "Australia",
+    "description": "Cultural Australian city known for cafes, arts, sports and vibrant urban atmosphere."
+  },
+  {
+    "name": "Auckland",
+    "country": "New Zealand",
+    "description": "Scenic waterfront city known for nature, outdoor activities and relaxed island lifestyle."
+  },
+  {
+    "name": "Vancouver",
+    "country": "Canada",
+    "description": "Canadian coastal city known for mountains, outdoor activities and modern multicultural lifestyle."
+  },
+  {
+    "name": "Toronto",
+    "country": "Canada",
+    "description": "Large multicultural city known for skyline views, food, entertainment and urban diversity."
+  },
+  {
+    "name": "Montreal",
+    "country": "Canada",
+    "description": "French-speaking Canadian city known for culture, festivals, food and European atmosphere."
+  },
+  {
+    "name": "Chicago",
+    "country": "United States",
+    "description": "Major American city known for architecture, jazz, food and lakeside skyline views."
+  },
+  {
+    "name": "Los Angeles",
+    "country": "United States",
+    "description": "Entertainment capital known for Hollywood, beaches, nightlife and sunny California lifestyle."
+  },
+  {
+    "name": "San Francisco",
+    "country": "United States",
+    "description": "Hilly coastal city known for technology, iconic bridges, culture and waterfront scenery."
+  },
+  {
+    "name": "Miami",
+    "country": "United States",
+    "description": "Tropical coastal city known for beaches, nightlife, Latin culture and luxury lifestyle."
+  },
+  {
+    "name": "Las Vegas",
+    "country": "United States",
+    "description": "Entertainment city famous for casinos, nightlife, luxury resorts and live performances."
+  },
+  {
+    "name": "Washington",
+    "country": "United States",
+    "description": "Political capital known for monuments, museums, government buildings and historic landmarks."
+  },
+  {
+    "name": "Boston",
+    "country": "United States",
+    "description": "Historic American city known for universities, colonial history and cultural institutions."
+  },
+  {
+    "name": "Mexico City",
+    "country": "Mexico",
+    "description": "Large Latin American capital known for history, food, museums and vibrant cultural life."
+  },
+  {
+    "name": "Cancun",
+    "country": "Mexico",
+    "description": "Popular beach destination known for resorts, turquoise waters and tropical nightlife atmosphere."
+  },
+  {
+    "name": "Rio de Janeiro",
+    "country": "Brazil",
+    "description": "Famous coastal city known for beaches, carnival, mountains and vibrant Brazilian culture."
+  },
+  {
+    "name": "Sao Paulo",
+    "country": "Brazil",
+    "description": "Massive South American metropolis known for business, nightlife, culture and gastronomy."
+  },
+  {
+    "name": "Buenos Aires",
+    "country": "Argentina",
+    "description": "Elegant South American capital known for tango, architecture, nightlife and European atmosphere."
+  },
+  {
+    "name": "Santiago",
+    "country": "Chile",
+    "description": "Modern South American capital surrounded by mountains, known for wine and urban culture."
+  },
+  {
+    "name": "Lima",
+    "country": "Peru",
+    "description": "Coastal Latin American capital famous for gastronomy, colonial history and Pacific ocean views."
+  },
+  {
+    "name": "Bogota",
+    "country": "Colombia",
+    "description": "High-altitude capital known for culture, museums, street art and lively urban atmosphere."
+  },
+  {
+    "name": "Cape Town",
+    "country": "South Africa",
+    "description": "Scenic coastal city known for mountains, beaches, vineyards and outdoor adventure opportunities."
+  },
+  {
+    "name": "Johannesburg",
+    "country": "South Africa",
+    "description": "Large African city known for history, business, culture and vibrant urban development."
+  },
+  {
+    "name": "Nairobi",
+    "country": "Kenya",
+    "description": "African capital known for wildlife access, safaris, urban culture and natural attractions."
+  },
+  {
+    "name": "Zanzibar City",
+    "country": "Tanzania",
+    "description": "Historic island city known for beaches, spice markets and Swahili cultural heritage."
+  },
+  {
+    "name": "Honolulu",
+    "country": "United States",
+    "description": "Tropical island destination known for beaches, surfing, volcanic scenery and relaxed atmosphere."
+  },
+  {
+    "name": "Bali",
+    "country": "Indonesia",
+    "description": "Popular island destination known for beaches, temples, tropical nature and wellness tourism."
+  },
+  {
+    "name": "Phuket",
+    "country": "Thailand",
+    "description": "Tropical island destination famous for beaches, nightlife, resorts and ocean activities."
+  },
+  {
+    "name": "Hanoi",
+    "country": "Vietnam",
+    "description": "Historic Southeast Asian capital known for street food, lakes, culture and colonial architecture."
+  },
+  {
+    "name": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "description": "Dynamic Vietnamese city known for nightlife, food, markets and fast-paced urban culture."
+  },
+  {
+    "name": "Kuala Lumpur",
+    "country": "Malaysia",
+    "description": "Modern Southeast Asian capital known for skyscrapers, food, shopping and cultural diversity."
+  },
+  {
+    "name": "Manila",
+    "country": "Philippines",
+    "description": "Busy coastal capital known for shopping, nightlife, history and tropical urban atmosphere."
+  }
+]
