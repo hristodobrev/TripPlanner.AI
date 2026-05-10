@@ -1,0 +1,59 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# HuggingFace models/cache
+models/
+.cache/
+huggingface/
+
+# PyTorch / Transformers
+*.bin
+*.safetensors
+
+# Flask
+instance/
+.webassets-cache/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+*.log
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Pytest
+.pytest_cache/
+
+# Mypy
+.mypy_cache/
+
+# Ruff
+.ruff_cache/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Coverage
+.coverage
+htmlcov/
