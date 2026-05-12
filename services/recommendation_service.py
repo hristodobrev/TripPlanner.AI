@@ -35,24 +35,38 @@ places_embeddings = embedding_model.encode(
 )
 
 
+def visited_place_to_text(visited_place) -> str:
+    matched_place = next(
+        (
+            place for place in places_catalog
+            if place["name"].lower() == visited_place.name.lower()
+        ),
+        None
+    )
+
+    if matched_place:
+        return place_to_text(matched_place)
+
+    parts = [visited_place.name]
+
+    if visited_place.country:
+        parts.append(visited_place.country)
+
+    text = ", ".join(parts)
+
+    if visited_place.description:
+        text += f". {visited_place.description}"
+
+    return text
+
+
 def recommend_places(data: RecommendPlacesRequest) -> RecommendPlacesResponse:
-    visited_places_lower = {place.lower() for place in data.visitedPlaces}
+    visited_places_lower = {place.name.lower() for place in data.visitedPlaces}
 
-    visited_texts = []
-
-    for visited_place in data.visitedPlaces:
-        matched_place = next(
-            (
-                place for place in places_catalog
-                if place["name"].lower() == visited_place.lower()
-            ),
-            None
-        )
-
-        if matched_place:
-            visited_texts.append(place_to_text(matched_place))
-        else:
-            visited_texts.append(visited_place)
+    visited_texts = [
+        visited_place_to_text(visited_place)
+        for visited_place in data.visitedPlaces
+    ]
 
     visited_embeddings = embedding_model.encode(
         visited_texts,
@@ -78,7 +92,11 @@ def recommend_places(data: RecommendPlacesRequest) -> RecommendPlacesResponse:
                 name=place["name"],
                 country=place["country"],
                 description=place["description"],
-                score=round(float(scores[index]), 4)
+                score=round(float(scores[index]), 4),
+                imageUrl=place.get("imageUrl"),
+                imageAuthor=place.get("imageAuthor"),
+                imageAuthorUrl=place.get("imageAuthorUrl"),
+                imageSource=place.get("imageSource")
             )
         )
 
