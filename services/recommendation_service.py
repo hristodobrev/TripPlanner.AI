@@ -6,8 +6,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 from schemas.recommendation_schemas import (
     RecommendPlacesRequest,
-    RecommendedPlace,
-    RecommendPlacesResponse
+    RecommendedPlace
 )
 
 
@@ -60,7 +59,7 @@ def visited_place_to_text(visited_place) -> str:
     return text
 
 
-def recommend_places(data: RecommendPlacesRequest) -> RecommendPlacesResponse:
+def recommend_places(data: RecommendPlacesRequest) -> list[RecommendedPlace]:
     visited_places_lower = {place.name.lower() for place in data.visitedPlaces}
 
     visited_texts = [
@@ -93,6 +92,7 @@ def recommend_places(data: RecommendPlacesRequest) -> RecommendPlacesResponse:
                 country=place["country"],
                 description=place["description"],
                 score=round(float(scores[index]), 4),
+                placeId=place.get("placeId"),
                 imageUrl=place.get("imageUrl"),
                 imageAuthor=place.get("imageAuthor"),
                 imageAuthorUrl=place.get("imageAuthorUrl"),
@@ -103,6 +103,4 @@ def recommend_places(data: RecommendPlacesRequest) -> RecommendPlacesResponse:
         if len(recommendations) >= data.count:
             break
 
-    return RecommendPlacesResponse(
-        recommendations=recommendations
-    )
+    return recommendations

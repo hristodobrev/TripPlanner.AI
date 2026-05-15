@@ -16,11 +16,9 @@ class RecommendedPlace(BaseModel):
     country: str
     description: str
     score: float
+    placeId: str | None = None
     imageUrl: str | None = None
     imageAuthor: str | None = None
     imageAuthorUrl: str | None = None
     imageSource: str | None = None
 
-
-class RecommendPlacesResponse(BaseModel):
-    recommendations: list[RecommendedPlace]

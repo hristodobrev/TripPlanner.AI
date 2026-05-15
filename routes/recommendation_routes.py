@@ -13,9 +13,12 @@ def recommend_places_endpoint():
     try:
         data = RecommendPlacesRequest.model_validate(request.get_json())
 
-        response = recommend_places(data)
+        recommendations = recommend_places(data)
 
-        return jsonify(response.model_dump()), 200
+        return jsonify([
+            recommendation.model_dump()
+            for recommendation in recommendations
+        ]), 200
 
     except ValidationError as ex:
         return jsonify({
