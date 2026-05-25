@@ -50,6 +50,7 @@ Thumbs.db
 build/
 dist/
 *.egg-info/
+.docker-tmp/
 
 # Jupyter
 .ipynb_checkpoints/

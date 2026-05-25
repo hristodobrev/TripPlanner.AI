@@ -1,6 +1,6 @@
 import torch
 
-from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
+from transformers import AutoTokenizer, AutoModelForCausalLM
 
 from schemas.description_schemas import DescriptionRequest, DescriptionResponse
 from utils.json_utils import extract_json
@@ -18,13 +18,7 @@ model = AutoModelForCausalLM.from_pretrained(
     MODEL_ID,
     cache_dir="./models",
     device_map="auto",
-    torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32
-)
-
-pipe = pipeline(
-    "text-generation",
-    model=model,
-    tokenizer=tokenizer
+    dtype=torch.float16 if torch.cuda.is_available() else torch.float32
 )
 
 
@@ -58,24 +52,28 @@ def build_prompt(data: DescriptionRequest) -> list[dict]:
 def generate_description(data: DescriptionRequest) -> DescriptionResponse:
     messages = build_prompt(data)
 
-    prompt = pipe.tokenizer.apply_chat_template(
+    prompt = tokenizer.apply_chat_template(
         messages,
         tokenize=False,
         add_generation_prompt=True
     )
 
-    result = pipe(
-        prompt,
+    inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+
+    output_ids = model.generate(
+        **inputs,
         max_new_tokens=250,
         temperature=0.3,
         do_sample=True,
-        return_full_text=False
+        pad_token_id=tokenizer.eos_token_id
     )
 
-    generated_text = result[0]["generated_text"]
-
-    if isinstance(generated_text, list):
-        generated_text = generated_text[-1]["content"]
+    generated_ids = output_ids[0][inputs["input_ids"].shape[-1]:]
+    generated_text = tokenizer.decode(
+        generated_ids,
+        skip_special_tokens=True,
+        clean_up_tokenization_spaces=False
+    )
 
     parsed_json = extract_json(generated_text)
 
